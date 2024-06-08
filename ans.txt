@@ -1,0 +1,28 @@
+/* Question 1 : */
+
+use adventureworks;
+select * from Person.Person
+
+/* Question 2 : */
+
+select * from Person.Person where  LastName  like '%N' 
+
+/* Question 3 : */
+select * from Person.Address WHERE city in ('Berlin', 'London')
+
+/* Question 4 : */
+select * from Person.Address as x , Person.StateProvince as y where x.StateProvinceID = y.StateProvinceID and y.CountryRegionCode in ('US', 'UK') 
+
+/* Question 5 */
+SELECT * from Production.Product order by Name
+
+/* Question 6 */
+
+SELECT * from Production.Product where Name like 'A%'
+
+/* Question 7 */
+SELECT * from Sales.Customer
+
+Question 8
+
+Question 9
